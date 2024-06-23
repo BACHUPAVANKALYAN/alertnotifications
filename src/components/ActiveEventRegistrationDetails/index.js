@@ -11,7 +11,7 @@ const ActiveEventRegistrationDetails = props => {
 
   const renderNoActiveEventView = () => (
     <p className="no-active-event-description">
-      Click on an event, to view its registrations details
+      Click on an event, to view its registration details
     </p>
   )
 
@@ -52,7 +52,7 @@ const ActiveEventRegistrationDetails = props => {
       <p className="register-des">
         A live performance brings so much to your relationship with dance.
         Seeing dance live can often make you fall totally in love with this
-        beautiful art form
+        beautiful art form.
       </p>
       <button type="button" className="register-here-button">
         Register Here
