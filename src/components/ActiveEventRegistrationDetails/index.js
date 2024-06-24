@@ -7,7 +7,7 @@ const registrationStatus = {
 }
 
 const ActiveEventRegistrationDetails = props => {
-  const {activeEventRegistrationStatus} = props
+  const {getActiveEventRegistrationStatus} = props
 
   const renderNoActiveEventView = () => (
     <p className="no-active-event-description">
@@ -61,7 +61,7 @@ const ActiveEventRegistrationDetails = props => {
   )
 
   const renderActiveEventRegistrationDetails = () => {
-    switch (activeEventRegistrationStatus) {
+    switch (getActiveEventRegistrationStatus) {
       case registrationStatus.yetToRegister:
         return renderYetToRegisterView()
       case registrationStatus.registered:
